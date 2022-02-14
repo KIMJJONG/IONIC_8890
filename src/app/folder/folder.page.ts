@@ -22,7 +22,7 @@ export class FolderPage implements OnInit {
   }
 
   login() {
-    return this.http.post('http://118.67.130.70:8080/api/login1', { id: this.id, pw: this.pw }, { responseType: 'text' }).subscribe(response => {
+    return this.http.post('/api/login', { id: this.id, pw: this.pw }, { responseType: 'text' }).subscribe(response => {
       console.log(response);
     });
   }
