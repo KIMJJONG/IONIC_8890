@@ -28,6 +28,8 @@
     "@ionic-native/http": "^5.36.0",
     "@ionic/angular": "^6.0.0",
     "cordova-plugin-advanced-http": "^3.2.2",
+    "ion2-calendar": "^3.0.0-rc.0",
+    "moment": "^2.29.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

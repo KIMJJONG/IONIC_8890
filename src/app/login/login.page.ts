@@ -3,12 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  selector: 'app-login',
+  templateUrl: './login.page.html',
+  styleUrls: ['./login.page.scss'],
 })
-export class FolderPage implements OnInit {
-  public folder: string;
+export class LoginPage implements OnInit {
 
   public id: string;
   public pw: string;
@@ -18,7 +17,6 @@ export class FolderPage implements OnInit {
     private http: HttpClient) { }
 
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
   login() {

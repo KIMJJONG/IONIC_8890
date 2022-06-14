@@ -1,12 +1,3 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <div id="container">
     <ion-item>
@@ -17,6 +8,6 @@
       <ion-label>PW</ion-label>
       <ion-input [(ngModel)]="pw"></ion-input>
     </ion-item>
-    <ion-button expand="block" (click)="login()">로그인</ion-button>
+    <ion-button expand="block" [routerLink]="['/main']">로그인</ion-button>
   </div>
 </ion-content>
